@@ -9,8 +9,9 @@
 
       dcl-Proc PrEntrada Export;
         dcl-pi *n;
-          InNombre like(wNombreT);
-          InId like(wIdT);
+          InNombre like(wNombreT) Const;
+          InId like(wIdT) Const;
+          OutMsgId like(wMsgId);
         end-pi;
 
         //- Structures 

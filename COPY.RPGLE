@@ -7,6 +7,7 @@
 
       dcl-s wNombreT char(10) Template;
       dcl-s wIdT int(5) Template;
+      dcl-s wMsgIdT char(7) Template;
 
       dcl-pr PrInsertar;
         parUsuario likeDs(DsUsuarioT);
