@@ -14,41 +14,29 @@
       //- Procedures
 
       dcl-Proc FnFormatoFecha Export;
-        dcl-pi *n like(wFechaT);
+        dcl-pi *n like(wResultadoT);
           InDate Date(*ISO) Const;
         end-pi;
 
-        //- Variables 
-
-        dcl-s wFecha like(wFechaT);
-
         //- Process 
 
-        wFecha = %Char(InDate:*Iso0);
-
-        Return wFecha;
+        Return %Char(InDate:*Iso0);
  
       end-Proc; 
 
       dcl-Proc FnFormatoTiempo Export;
-        dcl-pi *n like(wTiempoT);
+        dcl-pi *n like(wResultadoT);
           InTime Time(*ISO) Const;
         end-pi;
 
-        //- Variables 
-
-        dcl-s wTiempo like(wTiempoT);
-
         //- Process 
 
-        wTiempo = %Char(InTime:*hms);
-
-        Return wTiempo;
+        Return %Char(InTime:*hms);
 
       end-Proc; 
       
-      dcl-Proc FnIdMensaje Export;
-        dcl-pi *n like(wMsgIdT);
+      dcl-Proc FnFormatoMensaje Export;
+        dcl-pi *n like(wResultadoT);
           InSqlState like(wSqlStateT) Const;
         end-pi;
 
