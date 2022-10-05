@@ -58,8 +58,9 @@
           Exitoso like(wMsgIdT) Inz(' ');
           RegistroNoExiste like(wMsgIdT) Inz('WDC0100');
           SinFiltros like(wMsgIdT) Inz('WDC0200');
+          ObjetoNoExiste like(wMsgIdT) Inz('WDC0300');
           ErrorGenerico like(wMsgIdT) Inz('WDC0000');
-          Id Like(wMsgIdT) Dim(4) Pos(1);
+          Id Like(wMsgIdT) Dim(5) Pos(1);
         end-Ds;
 
         //- Process
@@ -77,7 +78,8 @@
           NoError Like(wSqlStateT) Inz('00000');
           NoRowsFound Like(wSqlStateT) Inz('02000');
           NoWhereClause Like(wSqlStateT) Inz('01504');
-          EstadoSql Like(wSqlStateT) Dim(3) Pos(1);
+          ObjectNoExist Like(wSqlStateT) Inz('42704');
+          EstadoSql Like(wSqlStateT) Dim(4) Pos(1);
         end-Ds;
 
         //- Variables
