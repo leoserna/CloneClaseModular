@@ -1,5 +1,8 @@
 **free
 
+      ctl-opt Copyright('Bancolombia - Wilson David Calderon Marquez');
+      ctl-opt nomain;
+
       /copy COPY
 
       dcl-Proc FnFormatoFecha Export;
@@ -35,3 +38,4 @@
         Return wTiempo;
 
       end-Proc; 
+      
