@@ -24,9 +24,11 @@
 
         DsUsuario.Nombre = InNombre;
         DsUsuario.Id = InId; 
-        DsUsuario.Fecha = FnFormatoFecha(%Date());
-        DsUsuario.Tiempo = FnFormatoTiempo(%Time());
+        DsUsuario.Fecha = FnFormato(%Date());
+        DsUsuario.Tiempo = FnFormato(%Time());
 
         PrInsertar(DsUsuario:wSqlState);
+
+        OutMsgId = FnFormato(wSqlState);
 
       end-Proc;
