@@ -29,4 +29,6 @@
 
         PrInsertar(DsUsuario:wSqlState);
 
+        OutMsgId = FnIdMensaje(wSqlState);
+
       end-Proc;

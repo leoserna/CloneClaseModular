@@ -15,6 +15,7 @@
       dcl-s wFechaT varchar(100) Template;
       dcl-s wTiempoT varchar(100) Template;
       dcl-s wSqlStateT char(5) Template;
+      dcl-s wPosicionT Int(3) Template;
 
       //- Prototypes
 
@@ -29,6 +30,10 @@
 
       dcl-pr FnFormatoTiempo like(wTiempoT);
         parTime Time(*ISO) Const;
+      end-pr;
+
+      dcl-pr FnIdMensaje like(wMsgIdT);
+        parSqlState like(wSqlStateT) Const;
       end-pr;
 
       dcl-pr PrEntrada;
