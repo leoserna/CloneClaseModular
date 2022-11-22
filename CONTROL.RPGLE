@@ -1,6 +1,6 @@
 **free
 
-      ctl-opt Copyright('Bancolombia - Wilson David Calderon Marquez');
+      ctl-opt Copyright('Bancolombia - Leonardo Serna Torres');
       ctl-opt nomain;
 
       /copy COPY
